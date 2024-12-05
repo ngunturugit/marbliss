@@ -1,0 +1,470 @@
+/* Basic Styling and Theme Toggle */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  #theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    color: #666;
+    transform: scale(1.1);
+  }
+  
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chonburi-regular {
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+  }
+  
+  header h1 {
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 0.2;
+  }
+  
+  header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-left: 80px;
+    z-index: 10;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  nav a:active {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #about {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #about .about-left {
+    text-align: center;
+  }
+  
+  
+  #about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  /* Image Styling with Fixed Size and Crop */
+  #about img {
+    width: 100%; 
+    max-width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 0 auto; 
+  }
+  
+
+  #about .about-right {
+    text-align: center;
+    max-width: 90%; 
+  }
+  
+  #about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  
+  
+  /* Products Section */
+  #products {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Game Section */
+  #game {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  #game input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #game button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #game button:hover {
+    background-color: #555;
+  }
+  
+  #game-result {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Form Section */
+  form {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Dark Mode Styling */
+  body.dark-mode {
+    background-color: #121212; 
+    color: #f5f5f5; 
+  }
+  
+  header.dark-mode {
+    background-color: #1f1f1f; 
+  }
+  
+  nav a.dark-link {
+    color: #f5f5f5; 
+  }
+  
+  nav a.dark-link:hover {
+    background-color: #555; 
+  }
+  
+  section.dark-section {
+    background-color: #2a2a2a; 
+    color: #f5f5f5; 
+  }
+  
+  
+  #products h2, #game h2, #game p, #products p {
+    color: #666; /* Dark grey text */
+  }
+  
+  /* Keep the Product and Game Sections the same in dark mode */
+  #products, #game {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #products {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #game {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #game input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #game button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #game button:hover {
+    background-color: #555;
+  }
+  
+  #game-result {
+    font-size: 1rem;
+    color: #333;
+  }
+  /* Contact Form Input Fields (Always Dark Grey Text and White Background) */
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; 
+    color: #333;  
+    font-size: 1rem;  
+  }
+  
+  /* Dark Mode Styling */
+  body.dark-mode form input, body.dark-mode form textarea {
+    background-color: white;  
+    color: #333; 
+    border: 1px solid #ccc;  
+  }
+  
+ 
+  form input::placeholder, form textarea::placeholder {
+    color: #aaa;  
+}
+  
+  form input:focus, form textarea:focus {
+    border-color: #4caf50; 
+    outline: none;  
+  }
+  
+ 
+  form label {
+    font-weight: bold;
+    color: #333;  
+  }
+  
+  /* Buttons remain consistent between light and dark mode */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button.dark-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.dark-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Product Detail Section */
+  #product-detail {
+    display: none;
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .product-detail-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-detail-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-detail-info {
+    max-width: 60%;
+  }
+  
+  .product-detail-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+ 
+  body.dark-mode #product-detail .product-detail-info h3 {
+    color: #333; 
+  }
+  
+  footer {
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer p:first-child {
+    font-weight: bold;
+  }
+  
+  footer a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }

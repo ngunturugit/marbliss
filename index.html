@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marble Sculpture</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="marble-script.js" async></script> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Jacquard+12+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <img src="https://images.unsplash.com/photo-1532467411038-57680e3dc0f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzMzMjkwODl8&ixlib=rb-4.0.3&q=80&w=400" alt="Logo" class="logo">
+  <h1>marbliss</h1>
+  <button id="theme-toggle">🌙</button> 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+  </nav>
+</header>
+
+
+  <main>
+    <section id="about">
+  <h2>About Us</h2>
+  <img src="https://images.pexels.com/photos/6694761/pexels-photo-6694761.jpeg" alt="About Us Image">
+<p>Welcome to <strong>Marbliss</strong>, where artistry and craftsmanship come together to create bespoke marble masterpieces. Specializing in custom desk decor, sculptural busts, and elegant vases, we turn the timeless beauty of marble into unique, handcrafted pieces that enhance any space. Founded by Emerald Chopain, a passionate artisan with a vision to blend traditional craftsmanship with modern design, Marbliss is committed to delivering designs that are both sophisticated and awe-inspiring.</p>
+
+  <p>At Marbliss, we believe marble is more than just a material—it's a medium that captures elegance and timelessness. Whether you're seeking a striking piece for your workspace or a custom creation that reflects your vision, we are dedicated to bringing your marble dreams to life, one masterpiece at a time.</p>
+
+  
+  <p><strong>Transforming spaces, one marble masterpiece at a time.</strong></p>
+</section>
+
+
+
+    <section id="products">
+  <h2>Our Products</h2>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1667400104789-f50a4cb393cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzMyODkwNjF8&ixlib=rb-4.0.3&q=85" alt="Marble Desk Decor">
+    <h3>Marble Desk Decor</h3>
+    <p>Starting at $100</p>
+  </div>
+  <div class="product">
+    <img src="https://images.pexels.com/photos/10061384/pexels-photo-10061384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Marble Bust">
+    <h3>Marble Bust</h3>
+    <p>Starting at $300</p>
+  </div>
+  <div class="product">
+    <img src="https://images.pexels.com/photos/6770266/pexels-photo-6770266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Marble Vase">
+    <h3>Marble Vase</h3>
+    <p>Starting at $100</p>
+  </div>
+</section>
+
+   <section id="product-detail" style="display: none;">
+  <div class="product-detail-container">
+    <div class="product-detail-image">
+      <img src="source" alt="Product Image" id="product-detail-image">
+    </div>
+    <div class="product-detail-info">
+      <h3 id="product-detail-title">Custom Orders</h3>
+      <p id="product-detail-short-description"></p>
+      <p id="product-detail-long-description"></p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="game">
+      <h2>Make a Guess, Earn a Deal!</h2>
+      <p>Guess a number between 1 and 10!</p>
+      <input type="number" id="user-guess" min="1" max="10">
+      <button id="guess-button">Submit Guess</button>
+      <p id="game-result"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="first-name">First Name (Required):</label>
+        <input type="text" id="first-name" required>
+
+        <label for="last-name">Last Name (Required):</label>
+        <input type="text" id="last-name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email">
+        <label>Preferred Contact Method (Required):</label>
+<div class="contact-method">
+  <label>
+    <input type="radio" id="contact-phone" name="contact-method" value="phone" checked> Phone
+  </label>
+  <label>
+    <input type="radio" id="contact-email" name="contact-method" value="email"> Email
+  </label>
+</div>
+        <label for="comments">Comments (Required):</label>
+        <textarea id="comments" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-result"></p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+  
+  <footer>
+  <p>&copy; 2024 Nikhit Gunturu. All rights reserved.</p>
+  <p>For educational purposes only.</p>
+  <p>Website design and development by Nikhit Gunturu.</p>
+</footer>
+
+  
+</body>
+</html>
